@@ -6,7 +6,7 @@ class App extends Component {
   render = () => (
     <div className="page">
       <Todo />
-      <Btn disabled="false" text="click here" />
+      {/* <Btn disabled="false" text="click here" /> */}
     </div>
   );
 }
