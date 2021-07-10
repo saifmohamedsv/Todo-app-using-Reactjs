@@ -1,0 +1,58 @@
+@import "../Todo.scss";
+.form {
+  margin: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  label {
+    font-size: 1.6rem;
+    font-family: $monteserrat;
+    text-transform: uppercase;
+    color: $very-light-gray;
+    font-weight: 700;
+  }
+  .form-input {
+    margin: 1rem 0;
+    padding: 18px 15px;
+    border: none;
+    border-bottom: 3px solid $dark-blue;
+    background-color: $dark-blue;
+    color: $white;
+    text-transform: capitalize;
+    font: 400 16.3333px Arial;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 5px rgb(0 0 0 / 23%);
+    &:focus {
+      outline: $white;
+    }
+    &::placeholder {
+      color: $white;
+    }
+  }
+  .form-btn {
+    max-width: 200px;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $monteserrat;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background-color: $dark-blue;
+    color: $very-light-gray;
+    box-shadow: 0 0 5px rgb(0 0 0 / 23%);
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $very-light-gray;
+      color: $dark-blue;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    margin-left: 0.75rem;
+  }
+}

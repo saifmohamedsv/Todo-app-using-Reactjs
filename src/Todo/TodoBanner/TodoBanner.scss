@@ -1,0 +1,14 @@
+@import "../Todo.scss";
+.banner {
+  padding: 1.7rem 1rem;
+  border-radius: 0.3rem;
+  background-color: $dark-blue;
+  color: $very-light-gray;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
